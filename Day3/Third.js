@@ -77,3 +77,117 @@
 // }
 
 
+// function myDisplay(some){
+//     console.log(some)
+// }
+
+// let myDisplay = new Promise(function(myDisplay,myReject){
+//     let x = 0;
+//     if(x==0){
+//         myResolve("Ok");
+//     }
+//     else{
+//         myReject("Error");
+//     }
+// }
+// );
+
+// myPromise.then(
+//     function(value) {myDisplay(value);},
+//     function(error){myDisplay(error);}
+
+// );
+
+// function showMessage(msg) {
+//     console.log(msg);
+// }
+
+// let x = 5;
+
+// let myPromise = new Promise((resolve, reject) => {
+//     if (x > 0) {
+//         resolve("Number is positive");
+//     } else {
+//         reject("Number is not positive");
+//     }
+// });
+
+// myPromise.then(
+//     function(value) {
+//         showMessage(value);
+//     },
+//     function(error) {
+//         showMessage(error);
+//     }
+// );
+
+
+
+// // Another way to write promise:
+// async function myfunction() {
+//     return 8+2;
+// }
+// myfunction().then(
+//     function(value) {console.log(value)},
+//     function(error) {console.log(error)}
+// )
+
+
+// async function myfunction() {
+//     let pro = new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             resolve("Hello world inner")
+//             console.log("Hello world")
+//     },2000)
+//     });  
+
+
+
+// let result = await pro;
+// console.log(result)
+// }
+// myfunction().then(
+//     function(value) {console.log(value)},
+//     function(error) {console.log(error)}
+// )
+
+
+// function fetchdData() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve({ data: "This is the fetched data" });
+//         }, 2000);
+// });
+// }
+
+// // Async function to handle fetching and processing data
+// async function processdata() {
+// try{
+//     console.log("Fetching data..");
+//     const result = await fetchdData();
+//     console.log("Data fetched:",result.data)
+//     return result.data;
+// }   
+// catch(error){
+//     console.log("Error Fetching data:",error);
+//     throw error;
+// }
+// }
+
+// // Call the sync Functions:
+// processdata()
+// .then(processData =>{
+//     console.log("Processed data:",processData)
+// })
+// .catch(error => {
+//     console.error("Final erorr:",error);
+// });
+
+
+// DOM (Document Object Model)
+
+
+
+
+
+
